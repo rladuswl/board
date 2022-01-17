@@ -27,6 +27,7 @@
 
 <body>
 <div class="layout">
+    <!-- button 누르면 action 링크로 보내짐-->
     <form th:action="@{/board/update/{id}(id=${board.id})}" method="post">
         <input name="title" type="text" th:value="${board.title}">
         <textarea name="content" th:text="${board.content}"></textarea>
